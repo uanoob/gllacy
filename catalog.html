@@ -20,7 +20,7 @@
       <ul class="site-navigation">
         <li>
           <a class="site-navigation__current" href="#">Каталог</a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu visually-hidden">
             <li>Новинки</li>
             <li>
               <a class="site-navigation__current">Сливочное</a>
@@ -88,13 +88,15 @@
         </fieldset>
         <fieldset>
           <legend>Цена: 100 руб. – 500 руб.</legend>
-          <input class="filter-input filter-input__range" id="filter-range" type="range" name="filter-range" min="100" max="2500" value="500"
+          <div class="filter-range">
+            <input class="filter-input filter-input__range" id="filter-range" type="range" name="filter-range" min="100" max="2500" value="500"
             step="10">
+          </div>
 
         </fieldset>
         <fieldset>
           <legend>Жирность:</legend>
-          <ul>
+          <ul class="filter-list">
             <li class="filter-option">
               <input class="filter-input filter-input__radio" id="filter-zero" type="radio" name="filter-fat" value="0">
               <label for="filter-zero">0%</label>
@@ -115,7 +117,7 @@
         </fieldset>
         <fieldset>
           <legend>Наполнители:</legend>
-          <ul>
+          <ul class="filter-list">
             <li class="filter-option">
               <input class="filter-input filter-input__checkbox" id="filter-chokolate" name="filter-fillers" type="checkbox" value="chocolate"
                 checked>
@@ -140,7 +142,7 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button-filter button" type="submit">Применить</button>
+        <button class="filter-button" type="submit">Применить</button>
       </form>
     </section>
     <section class="catalog">
@@ -271,7 +273,7 @@
 
     <ul class="paginator">
       <li class="paginator-item">
-        <a class="paginator-item__link" href="#">1</a>
+        <a class="paginator-item__link paginator-current" href="#">1</a>
       </li>
       <li class="paginator-item">
         <a class="paginator-item__link" href="#">2</a>
@@ -366,16 +368,17 @@
         <img class="basket__item-image" src="img/basket-small-1.jpg" alt="Пломбир с апельсиновым джемом">
         <span class="basket__item-price">1,5 кг х 200 руб.</span>
         <span class="basket__item-sum">300 руб.</span>
-        <button class="button-delete button" type="button">Удалить</button>
+        <button class="button-delete" type="button">Удалить</button>
       </li>
       <li class="basket__item">
         <h3 class="basket__item-title">Клубничный пломбир с присыпкой из белого шоколада</h3>
         <img class="basket__item-image" src="img/basket-small-2.jpg" alt="Клубничный пломбир с присыпкой  из белого шоколада">
         <span class="basket__item-price">1,5 кг х 300 руб.</span>
         <span class="basket__item-sum">450 руб.</span>
-        <button class="button-delete button" type="button">Удалить</button>
+        <button class="button-delete" type="button">Удалить</button>
       </li>
     </ul>
+    <hr>
     <b class="basket-amount">Итого: 750 руб.</b>
     <button class="button-basket button" type="button">Оформить заказ</button>
   </section>
