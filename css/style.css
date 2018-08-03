@@ -34,7 +34,33 @@ body {
   background: linear-gradient(90deg, rgb(215, 70, 50), rgb(225, 97, 62));
 }
 
+.container {
+  border: 1px solid yellow;
+  width: 1148px;
+  margin: 0 auto;
+  padding: 0 26px;
+}
+
+.main-header__logo {
+  border: 1px solid red;
+  width: 154px;
+  height: 64px;
+  margin-top: 9px;
+  margin-right: 24px;
+  margin-bottom: 10px;
+}
+
+.main-navigation {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
 .site-navigation {
+  border: 1px solid blue;
+  width: 350px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   line-height: 18px;
   font-weight: 700;
@@ -88,6 +114,11 @@ body {
 }
 
 .user-navigation {
+  border: 1px solid blue;
+  width: 265px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
   list-style: none;
 }
 
@@ -106,6 +137,7 @@ body {
 }
 
 .header-contacts {
+  border: 1px solid blue;
   text-align: right;
   font-size: 14px;
   line-height: 16px;
@@ -115,6 +147,10 @@ body {
 .header-phone {
   font-size: 22px;
   line-height: 24px;
+}
+
+.slider {
+  border: 1px solid red;
 }
 
 .slider-list {
@@ -155,11 +191,23 @@ body {
   background-color: #ffffff;
 }
 
+.banners {
+  border: 1px solid red;
+  margin-bottom: 35px;
+}
+
 .banner-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .banner__item-raspberry {
+  width: 560px;
+  min-height: 228px;
+  border-radius: 15px;
   background-color: #84071d;
   background: url(/img/raspberry.jpg);
   background-position: 0 0;
@@ -167,6 +215,9 @@ body {
 }
 
 .banner__item-chokolate {
+  width: 561px;
+  min-height: 228px;
+  border-radius: 15px;
   background-color: #663a1f;
   background: url(/img/chokolate.jpg);
   background-position: 0 0;
@@ -183,11 +234,22 @@ body {
   line-height: 22px;
 }
 
+.catalog {
+  border: 1px solid red;
+  margin-bottom: 40px;
+}
+
 .catalog-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .catalog__item {
+  border: 1px solid orange;
+  width: 267px;
   text-align: center;
 }
 
@@ -210,6 +272,10 @@ body {
   text-decoration-color: #ffbc9e;
 }
 
+.catalog__item-image {
+  border-radius: 50%;
+}
+
 .catalog__item-price {
   text-align: left;
   font-size: 45px;
@@ -218,11 +284,16 @@ body {
 }
 
 .seo {
+  border: 1px solid red;
+  width: 1148px;
+  min-height: 306px;
+  margin-bottom: 40px;
+  border-radius: 15px;
   color: #323232;
   background-color: #efe4cc;
-  background-image: url(/img/wafer.jpg);
+  background-image: url(/img/pattern-wafer.jpg);
   background-position: 0 0;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .seo-title {
@@ -237,7 +308,17 @@ body {
   font-weight: 400;
 }
 
+.column-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 .blog-news {
+  border: 1px solid red;
+  width: 560px;
+  min-height: 220px;
+  border-radius: 15px;
   color: #323232;
   background-color: #ffffff;
   background-image: url(/img/strawberry.jpg);
@@ -267,6 +348,10 @@ body {
 }
 
 .subscription {
+  border: 1px solid red;
+  width: 560px;
+  min-height: 220px;
+  border-radius: 15px;
   color: #323232;
   font-size: 16px;
   line-height: 22px;
@@ -281,6 +366,11 @@ body {
 }
 
 .map {
+  border: 1px solid red;
+  width: 1200px;
+  min-height: 430px;
+  margin: 0 auto;
+  padding: 0;
   color: #323232;
   background-color: #f7f1d9;
   background-image: url(/img/map.jpg);
@@ -289,7 +379,8 @@ body {
 }
 
 .map-adress {
-  /* background-color: #ffffff; */
+  width: 300px;
+  background-color: #ffffff;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -412,9 +503,15 @@ body {
 }
 
 .main-footer {
+  border: 1px solid orange;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-links {
+  border: 1px solid yellow;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -434,6 +531,9 @@ body {
 }
 
 .footer-menu {
+  border: 1px solid yellow;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -450,6 +550,12 @@ body {
 .footer-menu__item a:active {
   color: #ffbc9e;
   text-decoration-color: #ffbc9e;
+}
+
+.footer-copyright {
+  border: 1px solid yellow;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-copyright a {
@@ -478,10 +584,25 @@ body {
   line-height: 24px;
   font-weight: 400;
   border: 1px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 .modal input:hover {
   border: 2px solid #c7c6c5;
+}
+
+.modal-search {
+  width: 342px;
+  min-height: 84px;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.modal-login {
+  width: 276px;
+  min-height: 213px;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .modal-login a {
@@ -495,6 +616,12 @@ body {
 .modal-login a:active {
   color: #ffbc9e;
   text-decoration-color: #ffbc9e;
+}
+
+.modal-feedback {
+  width: 477px;
+  min-height: 440px;
+  border-radius: 15px;
 }
 
 .modal-feedback h2 {

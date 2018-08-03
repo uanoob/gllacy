@@ -12,15 +12,15 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <a class="main-header-logo">
-      <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
-    </a>
+  <header class="main-header container">
     <nav class="main-navigation">
+      <a class="main-header__logo">
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
+      </a>
       <ul class="site-navigation">
         <li>
           <a class="" href="#">Каталог</a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu visually-hidden">
             <li>Новинки</li>
             <li>
               <a href="catalog.html">Сливочное</a>
@@ -75,7 +75,7 @@
             <a class="slider-button button" href="#">Давайте оба!</a>
           </p>
         </li>
-        <li class="slider__item">
+        <!-- <li class="slider__item">
           <h3 class="slider__item-title">Шоколадный пломбир и лимонный сорбет</h3>
           <img src="img/slider-big-2.jpg" width="639" height="582" alt="Шоколадный пломбир и лимонный сорбет">
           <p class="slider__item-link">
@@ -88,7 +88,7 @@
           <p class="slider__item-link">
             <a class="slider-button button" href="#">Давайте оба!</a>
           </p>
-        </li>
+        </li> -->
       </ul>
       <ul class="slider-control">
         <li class="slider-control__item">
@@ -178,50 +178,53 @@
           в пути и позволяет сохранить превосходный вкус.</p>
       </div>
     </section>
-    <section class="blog-news">
-      <h2 class="blog-news__title">Новое в нашем блоге</h2>
-      <a href="#" class="blog-link">10 способов сервировки фруктовых щербетов к столу</a>
-    </section>
-    <section class="subscription">
-      <h2 class="visually-hidden">Рассылка</h2>
-      <p class="subscription-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
-        спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <form class="subscription-form" action="https://echo.htmlacademy.ru" method="POST">
-        <p>
-          <label class="visually-hidden" for="subscription-email">Электронная почта</label>
-          <input id="subscription-email" type="email" name="subscription-email" placeholder="Электронная почта">
-          <button class="button-subscription button" type="submit">Отправить</button>
-        </p>
-      </form>
-    </section>
-    <section class="map">
-      <h2 class="visually-hidden">Карта проезда</h2>
-      <div class="map-adress">
-        <p class="map-adress__office">
-          <span>Адрес главного офиса</span>
-          <br>
-          <span>и офлайн-магазина:</span>
-          <br>
-          <b>ул. Большая Конюшенная</b>
-          <br>
-          <b>19/8, Санкт-Петербург</b>
-          <br>
-        </p>
-        <p class="map-adress__phone">
-          <span>Для заказов по телефону:</span>
-          <br>
-          <b>8 812 450-25-25</b>
-          <br>
-          <span>(с 10 до 20 ежедневно)</span>
-        </p>
-        <p class="feedback-link">
-          <a class="button-feedback button" href="#feedback-name">Форма обратной связи</a>
-        </p>
-      </div>
-    </section>
+    <div class="column-wrap">
+      <section class="blog-news">
+        <h2 class="blog-news__title">Новое в нашем блоге</h2>
+        <a href="#" class="blog-link">10 способов сервировки фруктовых щербетов к столу</a>
+      </section>
+      <section class="subscription">
+        <h2 class="visually-hidden">Рассылка</h2>
+        <p class="subscription-desc">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
+          не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p>
+            <label class="visually-hidden" for="subscription-email">Электронная почта</label>
+            <input id="subscription-email" type="email" name="subscription-email" placeholder="Электронная почта">
+            <button class="button-subscription button" type="submit">Отправить</button>
+          </p>
+        </form>
+      </section>
+    </div>
   </main>
+  
+  <section class="map">
+    <h2 class="visually-hidden">Карта проезда</h2>
+    <div class="map-adress">
+      <p class="map-adress__office">
+        <span>Адрес главного офиса</span>
+        <br>
+        <span>и офлайн-магазина:</span>
+        <br>
+        <b>ул. Большая Конюшенная</b>
+        <br>
+        <b>19/8, Санкт-Петербург</b>
+        <br>
+      </p>
+      <p class="map-adress__phone">
+        <span>Для заказов по телефону:</span>
+        <br>
+        <b>8 812 450-25-25</b>
+        <br>
+        <span>(с 10 до 20 ежедневно)</span>
+      </p>
+      <p class="feedback-link">
+        <a class="button-feedback button" href="#feedback-name">Форма обратной связи</a>
+      </p>
+    </div>
+  </section>
 
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <div class="footer-socials">
       <ul class="social-links">
         <li class="social-links__item">
