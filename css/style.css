@@ -41,6 +41,10 @@ body {
   padding: 0 26px;
 }
 
+.main-header {
+  margin-bottom: 26px;
+}
+
 .main-header__logo {
   border: 1px solid red;
   width: 154px;
@@ -242,6 +246,7 @@ body {
 .catalog-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -392,13 +397,11 @@ body {
   font-weight: 700;
 }
 
-.catalog-title {
-  font-size: 35px;
-  line-height: 41px;
-  font-weight: 700;
-}
-
 .breadcrumbs {
+  border: 1px solid orangered;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
   list-style: none;
 }
 
@@ -417,8 +420,36 @@ body {
   text-decoration-color: #ffbc9e;
 }
 
+.catalog-title {
+  border: 1px solid orangered;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.filters {
+  border: 1px solid orangered;
+  margin-bottom: 35px;
+}
+
+.filters-wrap {
+  border: 1px solid orangered;
+  display: flex;
+  justify-content: space-between;
+  width: 860px;
+  margin-bottom: 15px;
+}
+
+.filters-wrap:last-child {
+  margin: 0;
+}
+
 .filters fieldset {
   border: none;
+  border: 1px solid yellow;
 }
 
 .filters legend {
@@ -428,6 +459,7 @@ body {
 }
 
 .filter-select {
+  width: 195px;
   color: #ffffff;
   font-size: 16px;
   line-height: 18px;
@@ -441,7 +473,16 @@ body {
 }
 
 .filter-range {
+  width: 220px;
   background-color: #abbcb2;
+}
+
+.filter-fat {
+  width: 415px;
+}
+
+.filter-fillers {
+  width: 705px;
 }
 
 .filter-list {
@@ -476,6 +517,7 @@ body {
 }
 
 .paginator {
+  border: 1px solid orangered;
   list-style: none;
 }
 
@@ -503,13 +545,13 @@ body {
 }
 
 .main-footer {
-  border: 1px solid orange;
+  border: 1px solid yellow;
   display: flex;
   justify-content: space-between;
 }
 
 .social-links {
-  border: 1px solid yellow;
+  border: 1px solid orangered;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -531,7 +573,7 @@ body {
 }
 
 .footer-menu {
-  border: 1px solid yellow;
+  border: 1px solid orangered;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -553,7 +595,7 @@ body {
 }
 
 .footer-copyright {
-  border: 1px solid yellow;
+  border: 1px solid orangered;
   margin: 0;
   padding: 0;
 }
@@ -635,7 +677,15 @@ body {
   font-size: 16px;
 }
 
+.modal-basket {
+  width: 540px;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
 .basket-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
