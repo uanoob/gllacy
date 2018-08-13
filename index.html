@@ -20,9 +20,9 @@
             <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
           </a>
           <ul class="site-navigation">
-            <li>
-              <a class="" href="#">Каталог</a>
-              <ul class="dropdown-menu visually-hidden">
+            <li class="site-navigation__dropdown">
+              <a href="#">Каталог</a>
+              <ul class="dropdown-menu">
                 <li>Новинки</li>
                 <li>
                   <a href="catalog.html">Сливочное</a>
@@ -46,15 +46,15 @@
             </li>
           </ul>
           <ul class="user-navigation">
-            <li>
+            <li class="user-navigation__item">
               <a class="search-link" href="#search-input">
                 <span class="">Поиск</span>
               </a>
             </li>
-            <li>
+            <li class="user-navigation__item">
               <a class="login-link" href="#user-email">Вход</a>
             </li>
-            <li>
+            <li class="user-navigation__item">
               <a class="basket-link" href="#">Пусто</a>
             </li>
           </ul>
@@ -175,16 +175,16 @@
           <h2 class="seo-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
           <div class="column-wrap">
             <div class="seo-item__wrap">
-              <p class="seo-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
+              <p class="seo-item seo-ice">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
                 и проверенных временем технологий.</p>
-              <p class="seo-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+              <p class="seo-item seo-eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
                 ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             </div>
             <div class="seo-item__wrap">
-              <p class="seo-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
+              <p class="seo-item seo-cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает
                 долговременное сотрудничество.
               </p>
-              <p class="seo-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+              <p class="seo-item seo-termo">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
                 растаять в пути и позволяет сохранить превосходный вкус.</p>
             </div>
           </div>
@@ -230,7 +230,7 @@
             <span>(с 10 до 20 ежедневно)</span>
           </p>
           <p class="feedback-link">
-            <a class="button-feedback button" href="#feedback-name">Форма обратной связи</a>
+            <a class="button feedback-button" href="#feedback-name">Форма обратной связи</a>
           </p>
         </div>
       </section>
@@ -238,36 +238,50 @@
       <footer class="main-footer">
         <div class="footer-socials">
           <ul class="social-links">
-            <li class="social-links__item">
-              <a class="social-links__item-link" href="#">Twitter</a>
+            <li class="social-links__item social-twitter">
+              <a class="social-links__item-link" href="#">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
             </li>
-            <li class="social-links__item">
-              <a class="social-links__item-link" href="#">Instagram</a>
+            <li class="social-links__item social-instagram">
+              <a class="social-links__item-link" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
             </li>
-            <li class="social-links__item">
-              <a class="social-links__item-link" href="#">Facebook</a>
+            <li class="social-links__item social-facebook">
+              <a class="social-links__item-link" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
-            <li class="social-links__item">
-              <a class="social-links__item-link" href="#">Telegram</a>
+            <li class="social-links__item social-vk">
+              <a class="social-links__item-link" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
             </li>
           </ul>
         </div>
         <ul class="footer-menu">
-          <li class="footer-menu__item">
-            <a class="footer-menu__item-link" href="#">Для поставщиков</a>
-          </li>
-          <li class="footer-menu__item">
-            <a class="footer-menu__item-link" href="#">О производстве</a>
-          </li>
-          <li class="footer-menu__item">
-            <a class="footer-menu__item-link" href="#">Наши документы</a>
-          </li>
-          <li class="footer-menu__item">
-            <a class="footer-menu__item-link" href="#">Экологические стандарты</a>
-          </li>
+          <div class="column-wrap">
+            <div class="footer-column">
+              <li class="footer-menu__item menu-heart">
+                <a class="footer-menu__item-link" href="#">Для поставщиков</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__item-link" href="#">О производстве</a>
+              </li>
+            </div>
+            <div class="footer-column">
+              <li class="footer-menu__item">
+                <a class="footer-menu__item-link" href="#">Наши документы</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="footer-menu__item-link" href="#">Экологические стандарты</a>
+              </li>
+            </div>
+          </div>
         </ul>
         <p class="footer-copyright">
-          <a class="main-footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-htmlacademy-small.svg" width="108" height="38" alt="small logo htmlacademy">
           </a>
           <br>
@@ -301,11 +315,13 @@
         <label class="visually-hidden" for="user-password">Пароль</label>
         <input type="password" id="user-password" name="user-password" placeholder="Пароль">
       </p>
-      <p>
-        <a class="restore-password" href="#">Забыли пароль?</a>
-        <a class="new-registration" href="#">Новая регистрация</a>
-      </p>
-      <button class="button button-login" type="submit">Войти</button>
+      <div class="login-wrap">
+        <p>
+          <a class="restore-password" href="#">Забыли пароль?</a>
+          <a class="new-registration" href="#">Новая регистрация</a>
+        </p>
+        <button class="button login-button" type="submit">Войти</button>
+      </div>
     </form>
   </section>
 
@@ -324,7 +340,7 @@
         <label class="visually-hidden" for="feedback-text">Напишите что-нибудь...</label>
         <textarea id="feedback-text" name="feedback-text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
       </p>
-      <button class="button button-feedback" type="submit">Отправить</button>
+      <button class="button feedback-button" type="submit">Отправить</button>
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
